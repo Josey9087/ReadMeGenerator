@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// These are the requirments needed to run the code.
 const inquirer = require('inquirer');
 const fs = require('fs');
 const license1 = require('./generateLicense.js');
-// TODO: Create an array of questions for user input
+// This code uses an input to then run a function which writes out the README.md file using the arguments given to it.
 const generateReadMe = ({ title, license, description, usage, installation, contributions, test, github, email, contact }) =>
   `
 ![License](https://img.shields.io/badge/License-${license}-blue.svg)
@@ -55,6 +55,7 @@ Email: ${email} How to Reach Me: ${contact}
 
 
 `
+// The const questions will activate the inquirer which is able to prompt the user in the terminal for inputs and give them key names.
 const questions = inquirer
   .prompt([
     {
@@ -110,7 +111,9 @@ const questions = inquirer
     }
   ])
 
-  // TODO: Create a function to write README file
+// The .then line takes the answers form the inquirer prompt and allows them to be used in the rest of the code thats within the function.
+// The switch interates through possibles cases that the key license from the answers could be. It sets copyright to the corresponding license.
+// Thhe license1 uses the exports from the file generateLicense to give copyright its value.
   .then((answers) => {
     copyright=""
     switch (answers.license) {
@@ -125,10 +128,14 @@ const questions = inquirer
         break;
 
     }
+    // The const READMECONTENT uses the generateReadME function and gives it the answers from the inquirer prompt.
     const READMECONTENT = generateReadMe(answers);
+    // The fs writes to the file by telling it what file it needs to write to or create, the content, and the callback.
     fs.writeFile('README.md', READMECONTENT, (err) =>
+    // If an err is given as a response then it will be console logged otherwise it will write "Successfully created README.md!"
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
+    // This appeneds the  copyright license of the chosen license to the bottom of the README file.
     fs.appendFile('README.md', copyright, (err) =>
     err ? console.log(err) : console.log('Successfully wrote licenses to README.md!') 
   );
