@@ -6,52 +6,53 @@
 
 ## Table of Contents:
 
-1.[Title](#title)
+1.[Description](#description)
 
-2.[Description](#description)
+2.[Usage](#usage)
 
-3.[Usage](#usage)
+3.[Installation](#installation)
 
-4.[Installation](#installation)
+4.[Contribution Guidelines](#contribution-guidelines)
 
-5.[Contribution Guidelines](#contribution-guidelines)
+5.[Testing Instuctions](#testing-instuctions)
 
-6.[Testing Instuctions](#testing-instuctions)
+6.[Questions](#questions)
 
-7.[Questions](#questions)
-
-8.[License](#license)
+7.[License](#license)
 
 
 
 ## Description:
-Project for the University of Denver in order to create code that generates a professional README file
+Project for the University of Denver Coding Bootcamp. I was given starter code however didn't use much of it.
 
 
 ## Usage: 
-It should be used in the temrinal to using node to generate a readme file
+This code should be used to write a professional and stylized README file for their repositories.
     
 
 ## Installation: 
-use git clone to dowload the repository onto your computer, use the terminal to go into the directory of the repository, input npm init -y to get the npm package.json. follwing this use npm install inquirer in your temrinal to download the inquirer package. once done use node index.js to run the code and follow the prompts.
+Install the code and use it by following these steps.
+1. Go into the directory for this code in your terminal.
+2. Input "npm init -y" to install the package.json of npm.
+3. Input " npm install inquirer" to install inquirer through npm.
+4. Use "node index.js" to run the index.js file in your terminal and answer the prompts to create your README file.
     
 
 ## Contribution Guidelines:
-To make any contributions email me so we can discuss them
+Anyone wanting to make contributions should reach out to be using my email provided.
     
 
 ## Testing Instuctions:
-none
+None
     
 
 ## Questions:
-Github Username: Josey9087 Link to Github: https://github.com/Josey9087
-Email: yanezjose9087@gmail.com How to Reach Me: Reach out to me regarding this code with the subject README Generator
+Github Username: Josey9087. Link to Github: https://github.com/Josey9087
+Email: 88466226+Josey9087@users.noreply.github.com How to Reach Me: Reach out to me about this repository using the subject: README Generator
 
 
 
-
-# License:
+## License:
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or

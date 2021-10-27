@@ -1,6 +1,5 @@
 const MIT=
-`
-# License:
+`## License:
 MIT License
 
 Copyright (c) [2021] []
@@ -24,8 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`;
 
 const Boost=
-`
-# License:
+`## License:
 Boost Software License - Version 1.0 - August 17th, 2003
 
 Permission is hereby granted, free of charge, to any person or organization
@@ -51,8 +49,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.`;
 
 const Unlicense= 
-`
-# License:
+`## License:
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or

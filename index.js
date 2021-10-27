@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const license1 = require('./generateLicense.js')
+const license1 = require('./generateLicense.js');
 // TODO: Create an array of questions for user input
 const generateReadMe = ({ title, license, description, usage, installation, contributions, test, github, email, contact }) =>
   `
@@ -81,7 +81,7 @@ const questions = inquirer
     {
       type: 'input',
       name: 'installation',
-      message: 'Write about how users can install and use your code.',
+      message: 'Write about how users can install your code.',
     },
     {
       type: 'input',
@@ -112,7 +112,7 @@ const questions = inquirer
 
   // TODO: Create a function to write README file
   .then((answers) => {
-    doit=""
+    copyright=""
     switch (answers.license) {
       case 'MIT':
         copyright = license1.MIT
@@ -125,7 +125,7 @@ const questions = inquirer
         break;
 
     }
-    const READMECONTENT = generateReadMe(answers,);
+    const READMECONTENT = generateReadMe(answers);
     fs.writeFile('README.md', READMECONTENT, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
@@ -133,7 +133,4 @@ const questions = inquirer
     err ? console.log(err) : console.log('Successfully wrote licenses to README.md!') 
   );
   })
-
-
-
 
