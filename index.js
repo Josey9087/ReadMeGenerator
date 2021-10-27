@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
-const generateReadMe = ({ title, tableofcontents, description, usage, installation, contributions, test, github, email }) =>
+const generateReadMe = ({ title, description, usage, installation, contributions, test, github, email }) =>
 `
 
 # Title: 
@@ -41,8 +41,8 @@ ${test}
     
 
 # Questions:
-${github} 
-${email}
+Github Username: ${github} 
+Email: ${email}
 `
 const questions = inquirer 
 .prompt ([
@@ -52,9 +52,10 @@ const questions = inquirer
         message: 'What is the title of your project?',
       },
       {
-        type: 'input',
-        name: 'tableofcontents',
-        message: 'Write a table of contents using this format:(1.Name)',
+        type: 'list',
+        name: 'license',
+        message: 'Choose your license.',
+        choices: ["MIT", "GNU GPLv3", "None"]
       },
       {
         type: 'input',
@@ -96,8 +97,12 @@ const questions = inquirer
 // TODO: Create a function to write README file
 .then((answers) => {
     const READMECONTENT = generateReadMe(answers);
+    console.log(answers.license)
 
     fs.writeFile('README.md', READMECONTENT, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
+    return answers.license
   });
+
+  
