@@ -3,31 +3,46 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
 const generateReadMe = ({ title, tableofcontents, description, usage, installation, contributions, test, github, email }) =>
-`Title: ${title}
+`
+
+# Title: 
+${title}
 
 
 Table of Contents:
-${tableofcontents}
-    
-    
-Description:
+[Title](#title)
+[Description](#description)
+[Usage](#usage)
+[Installation](#installation)
+[Contribution Guidelines](#contribution-guidelines)
+[Testing Instuctions](#testing-instuctions)
+[Questions](#questions)
+
+
+
+# Description:
     ${description}
 
 
-Usage: ${usage}
+# Usage: 
+${usage}
     
 
-Installation: ${installation}
+# Installation: 
+${installation}
     
 
-Contribution Guidelines:${contributions}
+# Contribution Guidelines:
+${contributions}
     
 
-Testing Instuctions${test}
+# Testing Instuctions:
+${test}
     
 
-Questions:${github} 
-          ${email}
+# Questions:
+${github} 
+${email}
 `
 const questions = inquirer 
 .prompt ([
