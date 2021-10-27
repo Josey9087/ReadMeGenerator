@@ -1,3 +1,4 @@
+// In here are the const variable that are used as the copyright licenses for the chosen license.
 const MIT=
 `## License:
 MIT License
@@ -73,6 +74,7 @@ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.`;
 
+// module.exports is used to exports the three variables above when another file calls to this one.
 module.exports={
     MIT,
     Boost,
