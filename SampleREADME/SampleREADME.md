@@ -1,7 +1,9 @@
 
 ![License](https://img.shields.io/badge/License-Unlicense-blue.svg)
 
-# README Generator
+# README Generator Sample
+
+## This is not the README only a sample of one made using the code
 
 
 ## Table of Contents:
@@ -18,30 +20,24 @@
 
 6.[Questions](#questions)
 
-7.[Media](#media)
-
 7.[License](#license)
 
 
 
 ## Description:
-Project for the University of Denver Coding Bootcamp. I was given starter code however didn't use much of it.
+This is a project for the University of Denver Coding Bootcamp
 
 
 ## Usage: 
-This code should be used to write a professional and stylized README file for their repositories.
+The code should be used to write a README file
     
 
 ## Installation: 
-Install the code and use it by following these steps.
-1. Go into the directory for this code in your terminal.
-2. Input "npm init -y" to install the package.json of npm.
-3. Input " npm install inquirer" to install inquirer through npm.
-4. Use "node index.js" to run the index.js file in your terminal and answer the prompts to create your README file.
+Users can install this code by watching this video
     
 
 ## Contribution Guidelines:
-Anyone wanting to make contributions should reach out to be using my email provided.
+None
     
 
 ## Testing Instuctions:
@@ -49,13 +45,9 @@ None
     
 
 ## Questions:
-Github Username: Josey9087. Link to Github: https://github.com/Josey9087
-Email: 88466226+Josey9087@users.noreply.github.com How to Reach Me: Reach out to me about this repository using the subject: README Generator
+Github Username: Josey9087 Link to Github: https://github.com/Josey9087
+Email: None How to Reach Me: None
 
-
-## Media:
-Walkthrough Video: https://drive.google.com/file/d/1SHXhBuu4yaVP9py_srx2YKYQgqhkqOgB/view?usp=sharing
-Screenshot: ![Work Day Scheduler Screenshot](./Images/READMEGeneratorScreenshot.png)
 
 
 ## License:
