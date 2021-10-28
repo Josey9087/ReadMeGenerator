@@ -18,6 +18,8 @@
 
 6.[Questions](#questions)
 
+7.[Media](#media)
+
 7.[License](#license)
 
 
@@ -50,6 +52,10 @@ None
 Github Username: Josey9087. Link to Github: https://github.com/Josey9087
 Email: 88466226+Josey9087@users.noreply.github.com How to Reach Me: Reach out to me about this repository using the subject: README Generator
 
+
+## Media:
+Walkthrough Video: https://drive.google.com/file/d/18JKJHDZliz3vX2FCItECiLRjn8kfTCq3/view?usp=sharing
+Screenshot: ![Work Day Scheduler Screenshot](./Images/READMEGeneratorScreenshot.png)
 
 
 ## License:
